@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Pizza Bestellung</title>
+  </head>
+  <body>
+    <div class="hintergrund">
+      <div class="ueberschrift">
+        <h1>Pizza Bestellung</h1>
+        <img src="images/italy.png" alt="Italienische Flagge" />
+      </div>
+      <p class="einleitung">
+        Lieber Gast, <br />
+        willkommen bei der <span>Pizza Bestellung</span>. Bitte füllen Sie das
+        <span>komplette</span> Formular aus. Die Pizza wird innerhalb von
+        <span>30 Minuten</span> geliefert.<br />
+        Vielen Dank!
+      </p>
+      <form action="#" method="post">
+        <fieldset class="pizza-auswahl">
+          <legend>Bestellung</legend>
+          <div class="gruppe-formular">
+            <label>Bestellart:</label>
+            <div class="optionen">
+              <label>
+                <input
+                  type="radio"
+                  name="order_type"
+                  value="Abholung"
+                  required
+                />
+                Abholung
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="order_type"
+                  value="Lieferung"
+                  required
+                />
+                Lieferung
+              </label>
+            </div>
+          </div>
+
+          <div class="gruppe-formular">
+            <label for="pizza_variant">Pizza Variante:</label>
+            <select id="pizza_variant" name="pizza_variant" required>
+              <option value="" disabled selected>Bitte wählen...</option>
+              <option value="Margherita">Margherita</option>
+              <option value="Salami">Salami</option>
+              <option value="Funghi">Funghi</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Diavolo">Diavolo</option>
+            </select>
+          </div>
+
+          <div class="gruppe-formular">
+            <h2>Sonderwünsche:</h2>
+            <label>
+              <input type="checkbox" name="extra_kaese" value="extra_kaese" />
+              Extra Käse
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="extra_peperoni"
+                value="extra_peperoni"
+              />
+              Peperoni
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="extra_champignons"
+                value="extra_champignons"
+              />
+              Champignons
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="kontaktdaten">
+          <legend>Kontaktdaten</legend>
+          <div class="gruppe-formular inline-gruppe">
+            <div>
+              <label for="vname">Vorname*</label>
+              <input
+                type="text"
+                id="vname"
+                name="vname"
+                placeholder="Ihr Vorname"
+                required
+              />
+            </div>
+            <div>
+              <label for="nname">Nachname*</label>
+              <input
+                type="text"
+                id="nname"
+                name="nname"
+                placeholder="Ihr Nachname"
+                required
+              />
+            </div>
+          </div>
+          <div class="gruppe-formular inline-gruppe">
+            <div>
+              <label for="telefon">Telefonnummer*</label>
+              <input
+                type="tel"
+                id="telefon"
+                name="telefon"
+                placeholder="Ihre Telefonnummer"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">E-Mail Adresse*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ihre E-Mail Adresse"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gruppe-formular inline-gruppe">
+            <div>
+              <label for="strasse">Straße*</label>
+              <input
+                type="text"
+                id="strasse"
+                name="strasse"
+                placeholder="Straße"
+                required
+              />
+            </div>
+            <div class="kleines-feld">
+              <label for="hausnummer">Hausnummer*</label>
+              <input
+                type="text"
+                id="hausnummer"
+                name="hausnummer"
+                placeholder="Nr."
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gruppe-formular inline-gruppe">
+            <div>
+              <label for="plz">Postleitzahl (PLZ)*</label>
+              <input
+                type="text"
+                id="plz"
+                name="plz"
+                placeholder="PLZ"
+                required
+              />
+            </div>
+            <div>
+              <label for="stadt">Ort*</label>
+              <input
+                type="text"
+                id="stadt"
+                name="stadt"
+                placeholder="Ort"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gruppe-formular">
+            <label for="addresse">Lieferadresse*</label>
+            <textarea
+              id="addressee"
+              name="addresse"
+              rows="3"
+              placeholder="Zusätzliche Angaben zur Lieferadresse (optional)"
+            ></textarea>
+          </div>
+        </fieldset>
+        <p class="datenschutz">
+          Mit Absenden des Formulars bestätigen Sie unsere
+          <a
+            href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+            rel="nofollow"
+            target="_blank"
+            >Datenschutzbestimmungen.</a
+          >
+        </p>
+        <button type="submit">
+          <img
+            src="images/cart-icon.png"
+            alt="Warenkorb Icon"
+            class="button-icon"
+          />Bestellung abschicken
+        </button>
+      </form>
+      <p class="pflichtfeld"><span class="stern">*</span> Pflichtfeld</p>
+    </div>
+  </body>
+</html>

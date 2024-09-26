@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: Inter, sans-serif;
+  background-image: linear-gradient(to right, #b7ffb2, #ffbbba);
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #444;
+  font-family: fantasy;
+}
+h2 {
+  font-size: 1rem;
+  color: #444;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.hintergrund {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.ueberschrift {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ueberschrift img {
+  width: 15%;
+  height: auto;
+  object-fit: contain;
+}
+.ueberschrift .gruppe-formular {
+  margin-bottom: 15px;
+}
+.gruppe-formular label {
+  display: block;
+  margin: 10px 0px 10px 0px;
+}
+.gruppe-formular input,
+.gruppe-formular select,
+.gruppe-formular textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.gruppe-formular input[type="radio"],
+.gruppe-formular input[type="checkbox"] {
+  width: auto;
+}
+.gruppe-formular .optionen {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.gruppe-formular .optionen label {
+  text-align: left;
+}
+button {
+  font-family: Inter, sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  background-color: #06be72;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #4cae4c;
+}
+.inline-gruppe {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.inline-gruppe div {
+  flex: 1;
+}
+.kleines-feld {
+  flex: 0 0 20%;
+}
+.kontaktdaten {
+  border: solid black 1px;
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.pizza-auswahl {
+  border: solid black 1px;
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 200px;
+}
+
+.pflichtfeld {
+  font-size: 0.8rem;
+}
+.stern {
+  color: red;
+}
+.button-icon {
+  width: 15px;
+  height: auto;
+  padding-right: 10px;
+}
+.datenschutz {
+  font-size: 0.8rem;
+}
+.datenschutz a {
+  text-decoration: none;
+  color: #06be72;
+}
+.datenschutz a:hover {
+  color: #4cae4c;
+}
+.einleitung p {
+  font-weight: 400;
+}
+.einleitung span {
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+input[type="radio"]:checked {
+  border-color: #00be72;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #00be72;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:checked {
+  border-color: #00be72;
+  background-color: #00be72;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  top: 0px;
+  left: 4.5px;
+  transform: rotate(45deg);
+}
